@@ -69,6 +69,8 @@ body
   width:20%;
   float: left;
 
+  background-color: rgb(250, 250, 250);
+
   border-bottom-color: black;
   border-bottom-style: double;
   border-bottom-width: thick;
@@ -91,7 +93,7 @@ body
 {
   z-index:0;
   position: relative;
-  width:80%;
+  width:70%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 8em;
@@ -106,14 +108,29 @@ pre
 {
   padding-left: 3em;
 }
-/*
+
 #footer
 {
-  position: fixed;
-  bottom:0%;
-  width: 20em;
-  background-color: orange;
   z-index: 100;
-  right:2em;
-
-}*/
+  height:2em;
+  width: 100%;
+  background-color: rgb(250, 250, 250);
+  border-top-style: double;
+  border-top-width: thick;
+  line-height: 200%;
+  padding-left:0.5em;
+}
+#footer a
+{
+  color:black;
+  font-weight: bold;
+}
+#footer a:hover
+{
+  text-decoration: none;
+}
+#footer-right
+{
+  float: right;
+  padding-right: 1em;
+}
