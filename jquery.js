@@ -33,7 +33,7 @@ function bigTop()
 {
   $("#banner").animate({height:"20em"})
   $("#bannerTopLayer").animate({height:"18em"})
-  $("#titleDiv").animate({height:"20%", width:"15em", top:"80%"})
+  $("#titleDiv").animate({height:"20%", width:"15em", top:"70%"})
   $("#homeButtonDiv").animate({width:"15em"})
   $("#logo").animate({marginTop:"6%"})
   $("#menu").animate({height:"1.75em", top:"18em"})
