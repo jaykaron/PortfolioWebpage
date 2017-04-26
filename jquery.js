@@ -1,23 +1,22 @@
 
 $(document).ready(function(){
-    $("#footer").slideDown();
     var slimmed = false;
-
     $(window).scroll(function(){
       var scrollTop = $(this).scrollTop();
-      if (slimmed == false && scrollTop > 4)
+      console.log(scrollTop);
+      if (slimmed == false && scrollTop > 30)
       {
         slimmed = true;
         smallTop();
       }
-      else if (slimmed && scrollTop < 4)
+      else if (slimmed && scrollTop < 30)
       {
         bigTop();
         slimmed = false;
       }
     });
 
-    $(".menuBox").click(function(){scrollToAnchor($(this).attr('title'));});
+    $(".menuBox").click(function(){scrollToAnchor($(this).attr('linkDes'));});
 });
 
 function smallTop()
@@ -28,7 +27,6 @@ function smallTop()
   $("#homeButtonDiv").animate({width:"3.5em"})
   $("#logo").animate({marginTop:"10%"})
   $("#menu").animate({height:"35%", top:"3.5em"})
-  $("#main").animate({ top:"15em"})
 }
 
 function bigTop()
@@ -39,15 +37,11 @@ function bigTop()
   $("#homeButtonDiv").animate({width:"15em"})
   $("#logo").animate({marginTop:"6%"})
   $("#menu").animate({height:"1.75em", top:"18em"})
-  $("#main").animate({ top:"22em"})
 }
 
 function scrollToAnchor(anchorName)
 {
-  console.log(anchorName);
-  var idString= "a[name='"+anchorName+"']"
-  console.log(idString);
+  var idString= "h2[name='"+anchorName+"']"
   var anchorObj = $(idString);
-  //'"+anchorName"']");
-  $("html,body").animate({scrollTop: anchorObj.offset().top+200},'slow');
+  $("html,body").animate({scrollTop: anchorObj.offset().top-100},'slow');
 }
