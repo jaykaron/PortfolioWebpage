@@ -1,6 +1,11 @@
 
 $(document).ready(function(){
     var slimmed = false;
+    if($(window).scrollTop() > 30)
+    {
+      slimmed = true;
+      smallTop()
+    }
     $(window).scroll(function(){
       var scrollTop = $(this).scrollTop();
       console.log(scrollTop);
