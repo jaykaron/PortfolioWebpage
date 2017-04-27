@@ -8,7 +8,6 @@ $(document).ready(function(){
     }
     $(window).scroll(function(){
       var scrollTop = $(this).scrollTop();
-      console.log(scrollTop);
       if (slimmed == false && scrollTop > 30)
       {
         slimmed = true;
@@ -32,6 +31,7 @@ function smallTop()
   $("#homeButtonDiv").animate({width:"3.5em"})
   $("#logo").animate({marginTop:"10%"})
   $("#menu").animate({height:"35%", top:"3.5em"})
+  $("#about").fadeOut(250);
 }
 
 function bigTop()
@@ -42,6 +42,7 @@ function bigTop()
   $("#homeButtonDiv").animate({width:"15em"})
   $("#logo").animate({marginTop:"6%"})
   $("#menu").animate({height:"1.75em", top:"18em"})
+  $("#about").fadeIn();
 }
 
 function scrollToAnchor(anchorName)
