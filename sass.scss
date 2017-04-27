@@ -1,49 +1,53 @@
+$primary-color:rgb(250, 250, 250);
+$back-color:rgb(225, 225, 225);
+
 body
 {
     padding: 0px;
     border:0px;
     margin:0px;
-    background-color:rgb(225, 225, 225);
+    background-color:$back-color;
 }
 #banner
 {
-  height:5em;
   z-index: 100;
   position: fixed;
-  width: 100%;
-  padding: 0px;
-  margin: 0px;
-
   top:0px;
-  background-color: rgb(250, 250, 250);
+
+  height:20em;
+  width: 100%;
+
+  background-color: $primary-color;
 }
 
 #bannerTopLayer
 {
   z-index: 101;
   position: absolute;
+
+  height:18em;
   width:100%;
-  height:70%;
 
   border-bottom-style: double;
   border-bottom-width: thick;
-
 }
 #titleDiv
 {
+  z-index:103;
   position:relative;
-  width:100%;
   left:0%;
-  top:0%;
-  height:100%;
+  top:70%;
+
+  height:20%;
+  width:15em;
+
   text-align: center;
-  padding-top: 0em;
 }
 #titleDiv > *
 {
   margin:0px;
 }
-#bannerTitle
+h1
 {
     font-size: 28px;
 }
@@ -51,46 +55,75 @@ body
 {
   z-index: 101;
   position:absolute;
+
   height:100%;
-  width: 3.5em;
+  width: 15em;
+
   border-right-style: double;
   border-right-width: thick;
 }
 #logo
 {
-  width: 70%;
+  z-index: 105;
+  position: relative;
   display: block;
-  margin-left: 15%;
-  margin-top: 10%;
-}
+  left: 15%;
+  top: 6%;
 
+  width: 70%;
+  height: auto;
+
+  cursor:pointer;
+}
+#about
+{
+  z-index: 102;
+  position: absolute;
+  left:15em;
+  top:0px;
+
+  width:100%;
+  height:100%;
+}
+#face
+{
+  position: relative;
+  top:10%;
+  left:2em;
+
+  height:80%;
+  width:auto;
+}
 #menu
 {
-  width:100%;
-  height:35%;
   position: relative;
-  top:3.5em;
+  top:18em;
 
+  width:100%;
+  height:1.75em;
 }
 .menuBox
 {
+  z-index: 200;
   display: block;
-  height:100%;
-  width:20%;
   float: left;
 
-  background-color: rgb(250, 250, 250);
+  height:100%;
+  width:16.666%;
+
+  background-color: $primary-color;
 
   border-bottom-color: black;
   border-bottom-style: double;
   border-bottom-width: thick;
 
-  text-align: center;
-  line-height: 190%;
-
   color:black;
   text-decoration: underline;
   font-weight: bold;
+  text-align: center;
+  line-height: 190%;
+
+  cursor:pointer;
 }
 .menuBox:hover
 {
@@ -103,15 +136,18 @@ body
 {
   z-index:0;
   position: relative;
+  top: 22em;
+
   width:70%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 8em;
-  background-color: rgb(250, 250, 250);
+  margin-bottom: 4em;
+  padding:10px;
+
+  background-color: $primary-color;
+
   border-style:double;
   border-width: thick;
-  padding:10px;
-  margin-bottom: 2em;
 }
 
 pre
@@ -124,14 +160,18 @@ pre
   z-index: 100;
   position: fixed;
   bottom:0px;
-  display:none;
+
   height:2em;
   width: 100%;
-  background-color: rgb(250, 250, 250);
+  padding-left:0.5em;
+
+  background-color: $primary-color;
+
   border-top-style: double;
   border-top-width: thick;
+
+  font-size: 14px;
   line-height: 200%;
-  padding-left:0.5em;
 }
 #footer a
 {
