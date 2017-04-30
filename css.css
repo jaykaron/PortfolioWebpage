@@ -8,14 +8,14 @@ body {
   z-index: 100;
   position: fixed;
   top: 0px;
-  height: 20em;
+  height: 25em;
   width: 100%;
   background-color: #fafafa; }
 
 #bannerTopLayer {
   z-index: 101;
   position: absolute;
-  height: 18em;
+  height: 23.25em;
   width: 100%;
   border-bottom-style: double;
   border-bottom-width: thick; }
@@ -27,6 +27,7 @@ body {
   top: 70%;
   height: 20%;
   width: 15em;
+  padding-top: 0.2em;
   text-align: center; }
 
 #titleDiv > * {
@@ -70,7 +71,7 @@ h1 {
 
 #menu {
   position: relative;
-  top: 18em;
+  top: 23.25em;
   width: 100%;
   height: 1.75em; }
 

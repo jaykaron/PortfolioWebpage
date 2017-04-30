@@ -1,6 +1,9 @@
 $primary-color:rgb(250, 250, 250);
 $back-color:rgb(225, 225, 225);
 
+$top-height: 25em;
+$menu-height: 1.75em;
+
 body
 {
     padding: 0px;
@@ -14,7 +17,7 @@ body
   position: fixed;
   top:0px;
 
-  height:20em;
+  height:$top-height;
   width: 100%;
 
   background-color: $primary-color;
@@ -25,7 +28,7 @@ body
   z-index: 101;
   position: absolute;
 
-  height:18em;
+  height:$top-height - $menu-height;
   width:100%;
 
   border-bottom-style: double;
@@ -40,6 +43,7 @@ body
 
   height:20%;
   width:15em;
+  padding-top: 0.2em;
 
   text-align: center;
 }
@@ -97,10 +101,10 @@ h1
 #menu
 {
   position: relative;
-  top:18em;
+  top:$top-height - $menu-height;
 
   width:100%;
-  height:1.75em;
+  height: $menu-height;
 }
 .menuBox
 {
