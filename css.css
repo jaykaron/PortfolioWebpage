@@ -16,9 +16,7 @@ body {
   z-index: 101;
   position: absolute;
   height: 23.25em;
-  width: 100%;
-  border-bottom-style: double;
-  border-bottom-width: thick; }
+  width: 100%; }
 
 #titleDiv {
   z-index: 103;
@@ -98,7 +96,7 @@ h1 {
   text-decoration: underline;
   font-weight: bold;
   text-align: center;
-  line-height: 190%;
+  line-height: 175%;
   cursor: pointer; }
 
 .menuBox:hover {
