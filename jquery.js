@@ -1,5 +1,8 @@
-
+var topHeight;
+var menuHeight;
 $(document).ready(function(){
+    topHeight = $("#banner").height();
+    menuHeight = $("#menu").height();
     var slimmed = false;
     if($(window).scrollTop() > 30)
     {
@@ -25,16 +28,27 @@ $(document).ready(function(){
 
 function smallTop()
 {
-  $("#banner").animate({height:"5em"})
-  $("#bannerTopLayer").animate({height:"70%"})
+  $("#banner").animate({height:"5.5em"})
+  $("#bannerTopLayer").animate({height:"3.75em"})
   $("#titleDiv").animate({height:"100%", width:"80%", left:"10%", top:"0%"})
   $("#homeButtonDiv").animate({width:"3.5em"})
   $("#logo").animate({top:"10%"})
-  $("#menu").animate({height:"35%", top:"3.5em"})
+  $("#menu").animate({top:"3.75em"})
   $("#about").fadeOut(250);
 }
 
 function bigTop()
+{
+  $("#banner").animate({height:topHeight})
+  $("#bannerTopLayer").animate({height: topHeight - menuHeight})
+  $("#titleDiv").animate({height:"20%", width:"15em", top:"70%", left:"0%"})
+  $("#homeButtonDiv").animate({width:"15em"})
+  $("#logo").animate({top:"6%"})
+  $("#menu").animate({top:topHeight - menuHeight})
+  $("#about").delay(200).fadeIn();
+}
+
+function bigTopOld()
 {
   $("#banner").animate({height:"20em"})
   $("#bannerTopLayer").animate({height:"18em"})
