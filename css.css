@@ -57,8 +57,9 @@ h1 {
   position: absolute;
   left: 15em;
   top: 0px;
-  height: 16em;
-  padding: 2em 2em 0em 2em;
+  height: 21.25em;
+  padding: 2em 1.2em 0em 2em;
+  margin-right: 0.7em;
   overflow-y: scroll; }
 
 #face {
