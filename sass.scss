@@ -141,7 +141,7 @@ h1
 }
 .menuBox:hover
 {
-  background-color: rgb(182, 182, 182);
+  background-color: darken($primary-color, 25%);
   text-decoration: none;
 }
 
