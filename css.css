@@ -28,7 +28,7 @@ body {
   width: 15%; }
 
 #logo {
-  z-index: 105;
+  z-index: 102;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -38,27 +38,19 @@ body {
   cursor: pointer; }
 
 #titleDiv {
-  z-index: 103;
-  position: absolute;
-  left: 0%;
-  top: 70%;
-  height: 20%;
-  width: 15rem;
-  padding-top: 0.2rem;
+  z-index: 102;
+  width: 100%;
   text-align: center; }
 
 #titleDiv > * {
   margin: 0px; }
-
-h1 {
-  font-size: 2rem; }
 
 .menuBox {
   z-index: 101;
   display: table;
   float: left;
   height: 100%;
-  width: 14.1666%;
+  width: 14.166%;
   background-color: #312de9;
   color: black;
   text-decoration: underline;
@@ -78,10 +70,9 @@ h1 {
 #mainContainer {
   z-index: 0;
   position: absolute;
-  top: 17rem;
+  top: 15rem;
   width: 100%;
   height: auto;
-  margin-bottom: 4rem;
   padding: 1rem;
   background-color: #26afeb; }
 
@@ -95,10 +86,10 @@ h1 {
   z-index: 400;
   position: fixed;
   display: none;
-  width: 6rem;
-  height: 6rem;
+  width: 5rem;
+  height: 5rem;
   right: 2rem;
-  bottom: 4rem;
+  bottom: 2rem;
   background-color: #21c336;
   cursor: pointer; }
 

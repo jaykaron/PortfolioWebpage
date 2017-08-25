@@ -1,8 +1,7 @@
 var topHeight;
-var menuHeight;
+
 $(document).ready(function(){
     topHeight = $("#banner").height();
-    menuHeight = $("#menu").height();
     var slimmed = false;
     if($(window).scrollTop() > 30)
     {
@@ -27,6 +26,7 @@ $(document).ready(function(){
     $("#backToTop").click(function(){scrollToTop();});
 });
 
+// Shrink the nav Bar
 function smallTop()
 {
   $("#banner").animate({height:"5.5em"})
@@ -34,6 +34,7 @@ function smallTop()
   $("#backToTop").fadeIn(250);
 }
 
+// Enlarge the nav Bar
 function bigTop()
 {
   $("#banner").animate({height:topHeight})
@@ -41,6 +42,7 @@ function bigTop()
   $("#backToTop").fadeOut(250);
 }
 
+// Scroll to specific section
 function scrollToAnchor(anchorName)
 {
   var idString= "h2[name='"+anchorName+"']"
@@ -48,7 +50,9 @@ function scrollToAnchor(anchorName)
   $("html,body").animate({scrollTop: anchorObj.offset().top-100},'slow');
 }
 
+// Scroll to top
 function scrollToTop()
 {
   $("html,body").animate({scrollTop: 0},'slow');
+  bigTop();
 }
