@@ -53,9 +53,6 @@ body {
   width: 14.166%;
   background-color: #312de9;
   color: black;
-  text-decoration: underline;
-  font-weight: bold;
-  font-size: 1.5rem;
   text-align: center;
   cursor: pointer; }
 
@@ -66,6 +63,14 @@ body {
 .menuBox > * {
   display: table-cell;
   vertical-align: middle; }
+
+.menuLabel {
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 1.5rem; }
+
+.menuQuote {
+  opacity: 0.0; }
 
 #mainContainer {
   z-index: 0;

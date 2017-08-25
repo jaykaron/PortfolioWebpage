@@ -77,9 +77,7 @@ body
   background-color: $primary-color;
 
   color:black;
-  text-decoration: underline;
-  font-weight: bold;
-  font-size: 1.5rem;
+
   text-align: center;
 
   cursor:pointer;
@@ -93,6 +91,16 @@ body
 {
   display: table-cell;
   vertical-align: middle;
+}
+.menuLabel
+{
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.menuQuote
+{
+  opacity: 0.0;
 }
 
 // **** MAIN SECTION **** //

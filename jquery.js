@@ -24,6 +24,9 @@ $(document).ready(function(){
 
     $(".menuBox").click(function(){scrollToAnchor($(this).attr('linkDes'));});
     $("#backToTop").click(function(){scrollToTop();});
+    $(".menuBox").mouseenter(function(){hoverOverMenu($(this));});
+    $(".menuBox").mouseleave(function(){hoverOffMenu($(this));});
+
 });
 
 // Shrink the nav Bar
@@ -55,4 +58,14 @@ function scrollToTop()
 {
   $("html,body").animate({scrollTop: 0},'slow');
   bigTop();
+}
+
+function hoverOverMenu(menuBox)
+{
+  menuBox.children().children(".menuQuote").stop( true, true ).animate({opacity: 1.0});
+}
+function hoverOffMenu(menuBox)
+{
+  //$(".menuQuote").stop( true, true ).animate({opacity: 0.0});
+  menuBox.children().children(".menuQuote").stop( true, true ).animate({opacity: 0.0});
 }
