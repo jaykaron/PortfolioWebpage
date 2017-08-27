@@ -4,87 +4,91 @@
   <title>Jay Karon</title>
   <link rel="stylesheet" type="text/css" href="css.css" />
   <link rel="icon" href="imgs/favicon16.ico" type="image/ico" />
+  <!--jQuery API from google-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <!--Custom jQuery-->
   <script src="jquery.js"></script>
 </head>
 <body>
+  <!-- **** TOP SECTION **** -->
   <div id="banner">
-    <div id="bannerTopLayer">
-      <div id="homeButtonDiv">
-        <img src="imgs/logo.png" id="logo" />
-      </div>
+    <div id="logoNameContainer">
+      <img src="imgs/logo.png" id="logo" />
       <div id="titleDiv">
         <h1>Jay Karon</h1>
         <h4>Catchy Slogan</h4>
       </div>
-      <div id="about">
-        <img src="imgs/face.jpg" id="face"/>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </div>
     </div>
-    <div id="menu">
-      <div class="menuBox" linkDes="about">
-          About
-      </div>
-      <div class="menuBox" linkDes="projects">
-        Projects
-      </div>
-      <div class="menuBox" linkDes="experience">
-        Experience
-      </div>
-      <div class="menuBox" linkDes="education">
-        Education
-      </div>
-      <div class="menuBox" linkDes="skills">
-        Skills
-      </div>
-      <div class="menuBox" linkDes="contact">
-        Contact
-      </div>
+    <div class="menuBox" linkDes="about">
+          <div class="menuLabel">About</div>
+          <div class="menuQuote">That's about it folks.<br />- No-one</div>
+    </div>
+    <div class="menuBox" linkDes="projects">
+          <div class="menuLabel">Projects</div>
+          <div class="menuQuote">Jump, and you will find out how to unfold your wings as you fall.<br />- Ray Bradbury</div>
+    </div>
+    <div class="menuBox" linkDes="experience">
+      <div class="menuLabel">Experience</div>
+      <div class="menuQuote">The only source of knowledge is experience.<br />- Albert Einstein</div>
+    </div>
+    <div class="menuBox" linkDes="education">
+      <div class="menuLabel">Education</div>
+      <div class="menuQuote">An investment in knowledge pays the best interest.<br />- Benjamin Franklin</div>
+    </div>
+    <div class="menuBox" linkDes="skills">
+      <div class="menuLabel">Skills</div>
+      <div class="menuQuote">The only source of knowledge is experience.<br />- Albert Einstein</div>
+    </div>
+    <div class="menuBox" linkDes="contact">
+      <div class="menuLabel">Contact</div>
+      <div class="menuQuote">Good words are worth much, and cost little.<br />- George Herbert</div>
     </div>
   </div>
-  <div id="main">
-    <h1>Hello World!</h1>
-    <hr />
-    <h2 name="about">About</h2>
-    <p>
-      Creating a web page template for future labs. Started from scratch with a
-      rough idea of how I wanted the page to look. Started off with html and added CSS.
-    </p>
-    <h2 name="projects">Projects</h2>
 
-    <h2 name="experience">Experience</h2>
-    <h2 name="education">Education</h2>
-    <h4>Bachelors of Computer Science</h4>
-    <h5>York University: 2016 - Present</h5>
+  <!-- **** MAIM SECTION ****-->
+  <div id="mainContainer">
+    <div id="about" class="contentBox">
+      <h2 name="about">About</h2>
+      <!--<img src="imgs/face.jpg" id="face"/>-->
+      <p>
+        Creating a web page template for future labs. Started from scratch with a
+        rough idea of how I wanted the page to look. Started off with html and added CSS.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+    <div id="projects" class="contentBox">
+      <h2 name="projects">Projects</h2>
+    </div>
+    <div id="experiece" class="contentBox">
+      <h2 name="experience">Experience</h2>
+    </div>
+    <div id="education" class="contentBox">
+      <h2 name="education">Education</h2>
+      <h4>Bachelors of Computer Science</h4>
+      <h5>York University: 2016 - Present</h5>
 
-    <h4>Dogwood Diploma</h4>
-    <h5>Prince of Wales Secondary School: 2008 - 2014</h5>
-    <p>
-      Already in highschool I focussed on technology classes and eventually graduated with the Infotech award.
-    </p>
-    <h2 name="skills">Skills</h2>
-    <h2 name="contact">Contact</h2>
-    <p>
-    The quick brown fox jumps over the lazy dog.<br />
-    </p>
-    <pre>
-z-index: 100;
-background-color: rgb(240, 240, 240);
-position: fixed;
-width: 100%;
-height:4em;
-padding: 0px;
-margin: 0px;
-    </pre>
-
-  </p>
+      <h4>Dogwood Diploma</h4>
+      <h5>Prince of Wales Secondary School: 2008 - 2014</h5>
+      <p>
+        Already in highschool I focussed on technology classes and eventually graduated with the Infotech award.
+      </p>
+    </div>
+    <div id="skills" class="contentBox">
+      <h2 name="skills">Skills</h2>
+    </div>
+    <div id="skills" class="contentBox">
+      <h2 name="contact">Contact</h2>
+      <p>
+      The quick brown fox jumps over the lazy dog.<br />
+      </p>
+    </div>
   </div>
-  <div id="footer">
-    <span id="footer-left"><a href="blank">Contact</a> - <a href="blank">Another</a></span>
-    <span id="footer-right">Website by Jay Karon &copy MIT License</span>
-  </div>
+
+  <!-- **** SCROLL UP BUTTON (hidden initially) **** -->
+  <div id="backToTop"> </div>
+
+  <div id="sizePlaceholder">  </div>
 </body>
 </html>

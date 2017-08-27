@@ -1,67 +1,93 @@
-var topHeight;
-var menuHeight;
+var bannerIsSmall;
+
+var bannerHeightBig;    // Gotten from the CSS, the initial height of the banner
+var bannerHeightSmall; // Set in the JS
+var menuLabelHeight;
+
 $(document).ready(function(){
-    topHeight = $("#banner").height();
-    menuHeight = $("#menu").height();
-    var slimmed = false;
+    bannerHeightBig = $("#sizePlaceholder").height();
+    bannerHeightSmall = $("#sizePlaceholder").width();
+    menuLabelHeight = $(".menuLabel").height();
+
+    bannerIsSmall = false;
     if($(window).scrollTop() > 30)
     {
-      slimmed = true;
-      smallTop()
+      bannerIsSmall = true;
+      smallTop();
     }
     $(window).scroll(function(){
       var scrollTop = $(this).scrollTop();
-      if (slimmed == false && scrollTop > 30)
+      if (bannerIsSmall == false && scrollTop > 30)
       {
-        slimmed = true;
+        bannerIsSmall = true;
         smallTop();
       }
-      else if (slimmed && scrollTop < 30)
+      else if (bannerIsSmall && scrollTop < 30)
       {
         bigTop();
-        slimmed = false;
+        bannerIsSmall = false;
       }
     });
 
     $(".menuBox").click(function(){scrollToAnchor($(this).attr('linkDes'));});
+    $("#backToTop").click(function(){scrollToTop();});
+    $(".menuBox").mouseenter(function(){hoverOverMenu($(this));});
+    $(".menuBox").mouseleave(function(){hoverOffMenu($(this));});
+
 });
 
+// Shrink the nav Bar
 function smallTop()
 {
-  $("#banner").animate({height:"5.5em"})
-  $("#bannerTopLayer").animate({height:"3.75em"})
-  $("#titleDiv").animate({height:"100%", width:"80%", left:"10%", top:"0%"})
-  $("#homeButtonDiv").animate({width:"3.5em"})
-  $("#logo").animate({top:"10%"})
-  $("#menu").animate({top:"3.75em"})
-  $("#about").fadeOut(250);
+  $("#banner").animate({height:bannerHeightSmall});
+  var newMarginTop = bannerHeightSmall / 2 - menuLabelHeight / 2;
+  $(".menuLabel").animate({marginTop: newMarginTop});
+  $("#titleDiv").fadeOut(250);
+  $("#backToTop").fadeIn(250);
+  $(".menuQuote").fadeOut();
 }
 
+// Enlarge the nav Bar
 function bigTop()
 {
-  $("#banner").animate({height:topHeight})
-  $("#bannerTopLayer").animate({height: topHeight - menuHeight})
-  $("#titleDiv").animate({height:"20%", width:"15em", top:"70%", left:"0%"})
-  $("#homeButtonDiv").animate({width:"15em"})
-  $("#logo").animate({top:"6%"})
-  $("#menu").animate({top:topHeight - menuHeight})
-  $("#about").delay(200).fadeIn();
+  $("#banner").animate({height:bannerHeightBig});
+  var newMarginTop = bannerHeightBig/2 - menuLabelHeight/2;
+  $(".menuLabel").animate({marginTop: newMarginTop});
+  $("#titleDiv").delay(200).fadeIn();
+  $("#backToTop").fadeOut(250);
 }
 
-function bigTopOld()
-{
-  $("#banner").animate({height:"20em"})
-  $("#bannerTopLayer").animate({height:"18em"})
-  $("#titleDiv").animate({height:"20%", width:"15em", top:"70%", left:"0%"})
-  $("#homeButtonDiv").animate({width:"15em"})
-  $("#logo").animate({top:"6%"})
-  $("#menu").animate({height:"1.75em", top:"18em"})
-  $("#about").delay(200).fadeIn();
-}
-
+// Scroll to specific section
 function scrollToAnchor(anchorName)
 {
-  var idString= "h2[name='"+anchorName+"']"
+  var idString= "h2[name='"+anchorName+"']";
   var anchorObj = $(idString);
   $("html,body").animate({scrollTop: anchorObj.offset().top-100},'slow');
+}
+
+// Scroll to top
+function scrollToTop()
+{
+  $("html,body").animate({scrollTop: 0},'slow');
+  bigTop();
+}
+
+function hoverOverMenu(menuBox)
+{
+  if(!bannerIsSmall)
+  {
+    var newLabelMargin = bannerHeightBig/4;
+    menuBox.children(".menuLabel").stop( true, true ).animate({marginTop: newLabelMargin}, 600);
+    menuBox.children(".menuQuote").stop( true, true ).fadeIn(600);
+  }
+
+}
+function hoverOffMenu(menuBox)
+{
+  if(!bannerIsSmall)
+  {
+    var newLabelMargin = bannerHeightBig/2;
+    menuBox.children(".menuLabel").stop( true, true ).animate({marginTop: newLabelMargin});
+    menuBox.children(".menuQuote").stop( true, true ).fadeOut();
+  }
 }

@@ -1,147 +1,107 @@
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
 body {
   padding: 0px;
   border: 0px;
   margin: 0px;
-  background-color: #e1e1e1; }
+  background-color: #5e60e3;
+  width: 100%;
+  height: 100%; }
 
 #banner {
   z-index: 100;
   position: fixed;
   top: 0px;
-  height: 25em;
+  height: 15rem;
   width: 100%;
-  background-color: #fafafa; }
+  background-color: #312de9; }
 
-#bannerTopLayer {
+#logoNameContainer {
   z-index: 101;
-  position: absolute;
-  height: 23.25em;
-  width: 100%; }
+  display: block;
+  float: left;
+  height: 100%;
+  width: 15%; }
+
+#logo {
+  z-index: 102;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7%;
+  width: auto;
+  height: 60%;
+  cursor: pointer; }
 
 #titleDiv {
-  z-index: 103;
-  position: relative;
-  left: 0%;
-  top: 70%;
-  height: 20%;
-  width: 15em;
-  padding-top: 0.2em;
+  z-index: 102;
+  width: 100%;
   text-align: center; }
 
 #titleDiv > * {
   margin: 0px; }
 
-h1 {
-  font-size: 28px; }
-
-#homeButtonDiv {
-  z-index: 101;
-  position: absolute;
-  height: 100%;
-  width: 15em;
-  border-right-style: double;
-  border-right-width: thick; }
-
-#logo {
-  z-index: 105;
-  position: relative;
-  display: block;
-  left: 15%;
-  top: 6%;
-  width: 70%;
-  height: auto;
-  cursor: pointer; }
-
-#about {
-  z-index: 102;
-  position: absolute;
-  left: 15em;
-  top: 0px;
-  height: 21.25em;
-  padding: 2em 1.2em 0em 2em;
-  margin-right: 0.7em;
-  overflow-y: scroll; }
-
-#face {
-  display: block;
-  margin: 0em 1em 1em 0em;
-  float: left;
-  height: 80%;
-  width: auto; }
-
-#aboutContent {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  margin: 2em; }
-
-#menu {
-  z-index: 300;
-  position: relative;
-  top: 23.25em;
-  width: 100%;
-  height: 1.75em; }
-
 .menuBox {
-  z-index: 301;
-  display: block;
+  z-index: 101;
   float: left;
   height: 100%;
-  width: 16.666%;
-  background-color: #fafafa;
-  border-top-style: double;
-  border-top-width: thick;
-  border-bottom-style: double;
-  border-bottom-width: thick;
+  width: 14.166%;
+  background-color: #312de9;
   color: black;
-  text-decoration: underline;
-  font-weight: bold;
   text-align: center;
-  line-height: 175%;
   cursor: pointer; }
 
 .menuBox:hover {
-  background-color: #bababa;
+  background-color: #7572f0;
   text-decoration: none; }
 
-#main {
-  z-index: 0;
-  position: relative;
-  top: 22em;
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 4em;
-  padding: 10px;
-  background-color: #fafafa;
-  border-style: double;
-  border-width: thick; }
+.menuLabel {
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 1.5rem;
+  height: 1.5rem;
+  margin-top: 6.75rem; }
 
-pre {
-  padding-left: 3em; }
-
-#footer {
-  z-index: 100;
-  position: fixed;
-  bottom: 0px;
-  height: 2em;
+.menuQuote {
+  display: none;
+  top: 50%;
+  height: 7.5rem;
   width: 100%;
-  padding-left: 0.5em;
-  background-color: #fafafa;
-  border-top-style: double;
-  border-top-width: thick;
-  font-size: 14px;
-  line-height: 200%; }
+  padding: 2rem 0.5rem 0.5rem 0.5rem; }
 
-#footer a {
-  color: black;
-  font-weight: bold; }
+#mainContainer {
+  z-index: 0;
+  position: absolute;
+  top: 15rem;
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  background-color: #26afeb; }
 
-#footer a:hover {
-  text-decoration: none; }
+.contentBox {
+  position: static;
+  width: 100%;
+  height: 80vh;
+  background-color: #c154d7; }
 
-#footer-right {
-  float: right;
-  padding-right: 1em; }
+#backToTop {
+  z-index: 400;
+  position: fixed;
+  display: none;
+  width: 5rem;
+  height: 5rem;
+  right: 2rem;
+  bottom: 2rem;
+  background-color: #21c336;
+  cursor: pointer; }
+
+#sizePlaceholder {
+  display: none;
+  height: 15rem;
+  width: 5rem; }
 
 /*# sourceMappingURL=css.css.map */
