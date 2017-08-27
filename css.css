@@ -47,7 +47,6 @@ body {
 
 .menuBox {
   z-index: 101;
-  display: table;
   float: left;
   height: 100%;
   width: 14.166%;
@@ -57,20 +56,22 @@ body {
   cursor: pointer; }
 
 .menuBox:hover {
-  background-color: #1713b6;
+  background-color: #7572f0;
   text-decoration: none; }
-
-.menuBox > * {
-  display: table-cell;
-  vertical-align: middle; }
 
 .menuLabel {
   text-decoration: underline;
   font-weight: bold;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  height: 1.5rem;
+  margin-top: 6.75rem; }
 
 .menuQuote {
-  opacity: 0.0; }
+  display: none;
+  top: 50%;
+  height: 7.5rem;
+  width: 100%;
+  padding: 2rem 0.5rem 0.5rem 0.5rem; }
 
 #mainContainer {
   z-index: 0;
@@ -97,5 +98,10 @@ body {
   bottom: 2rem;
   background-color: #21c336;
   cursor: pointer; }
+
+#sizePlaceholder {
+  display: none;
+  height: 15rem;
+  width: 5rem; }
 
 /*# sourceMappingURL=css.css.map */

@@ -68,7 +68,7 @@ body
 .menuBox
 {
   z-index: 101;
-  display: table;   // Needed to vertical center the text
+  //display: table;   // Needed to vertical center the text
   float: left;
 
   height:100%;
@@ -84,23 +84,25 @@ body
 }
 .menuBox:hover
 {
-  background-color: darken($primary-color, 15%);
+  background-color: lighten($primary-color, 15%);
   text-decoration: none;
-}
-.menuBox > *    // Vertical center aligns the spans
-{
-  display: table-cell;
-  vertical-align: middle;
 }
 .menuLabel
 {
   text-decoration: underline;
   font-weight: bold;
   font-size: 1.5rem;
+
+  height: 1.5rem;
+  margin-top: $top-height / 2 - 0.75rem;
 }
 .menuQuote
 {
-  opacity: 0.0;
+  display: none;
+  top: 50%;
+  height: $top-height / 2;
+  width: 100%;
+  padding: 2rem 0.5rem 0.5rem 0.5rem;
 }
 
 // **** MAIN SECTION **** //
@@ -140,4 +142,11 @@ body
 
   background-color: rgb(33, 195, 54);
   cursor: pointer;
+}
+
+#sizePlaceholder
+{
+  display: none;
+  height:15rem;
+  width:5rem;
 }

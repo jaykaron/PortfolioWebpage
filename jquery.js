@@ -1,24 +1,31 @@
-var topHeight;
+var bannerIsSmall;
+
+var bannerHeightBig;    // Gotten from the CSS, the initial height of the banner
+var bannerHeightSmall; // Set in the JS
+var menuLabelHeight;
 
 $(document).ready(function(){
-    topHeight = $("#banner").height();
-    var slimmed = false;
+    bannerHeightBig = $("#sizePlaceholder").height();
+    bannerHeightSmall = $("#sizePlaceholder").width();
+    menuLabelHeight = $(".menuLabel").height();
+
+    bannerIsSmall = false;
     if($(window).scrollTop() > 30)
     {
-      slimmed = true;
-      smallTop()
+      bannerIsSmall = true;
+      smallTop();
     }
     $(window).scroll(function(){
       var scrollTop = $(this).scrollTop();
-      if (slimmed == false && scrollTop > 30)
+      if (bannerIsSmall == false && scrollTop > 30)
       {
-        slimmed = true;
+        bannerIsSmall = true;
         smallTop();
       }
-      else if (slimmed && scrollTop < 30)
+      else if (bannerIsSmall && scrollTop < 30)
       {
         bigTop();
-        slimmed = false;
+        bannerIsSmall = false;
       }
     });
 
@@ -32,15 +39,20 @@ $(document).ready(function(){
 // Shrink the nav Bar
 function smallTop()
 {
-  $("#banner").animate({height:"5.5em"})
+  $("#banner").animate({height:bannerHeightSmall});
+  var newMarginTop = bannerHeightSmall / 2 - menuLabelHeight / 2;
+  $(".menuLabel").animate({marginTop: newMarginTop});
   $("#titleDiv").fadeOut(250);
   $("#backToTop").fadeIn(250);
+  $(".menuQuote").fadeOut();
 }
 
 // Enlarge the nav Bar
 function bigTop()
 {
-  $("#banner").animate({height:topHeight})
+  $("#banner").animate({height:bannerHeightBig});
+  var newMarginTop = bannerHeightBig/2 - menuLabelHeight/2;
+  $(".menuLabel").animate({marginTop: newMarginTop});
   $("#titleDiv").delay(200).fadeIn();
   $("#backToTop").fadeOut(250);
 }
@@ -48,7 +60,7 @@ function bigTop()
 // Scroll to specific section
 function scrollToAnchor(anchorName)
 {
-  var idString= "h2[name='"+anchorName+"']"
+  var idString= "h2[name='"+anchorName+"']";
   var anchorObj = $(idString);
   $("html,body").animate({scrollTop: anchorObj.offset().top-100},'slow');
 }
@@ -62,10 +74,20 @@ function scrollToTop()
 
 function hoverOverMenu(menuBox)
 {
-  menuBox.children().children(".menuQuote").stop( true, true ).animate({opacity: 1.0});
+  if(!bannerIsSmall)
+  {
+    var newLabelMargin = bannerHeightBig/4;
+    menuBox.children(".menuLabel").stop( true, true ).animate({marginTop: newLabelMargin}, 600);
+    menuBox.children(".menuQuote").stop( true, true ).fadeIn(600);
+  }
+
 }
 function hoverOffMenu(menuBox)
 {
-  //$(".menuQuote").stop( true, true ).animate({opacity: 0.0});
-  menuBox.children().children(".menuQuote").stop( true, true ).animate({opacity: 0.0});
+  if(!bannerIsSmall)
+  {
+    var newLabelMargin = bannerHeightBig/2;
+    menuBox.children(".menuLabel").stop( true, true ).animate({marginTop: newLabelMargin});
+    menuBox.children(".menuQuote").stop( true, true ).fadeOut();
+  }
 }
