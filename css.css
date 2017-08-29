@@ -50,7 +50,6 @@ body {
   float: left;
   height: 100%;
   width: 14.166%;
-  background-color: #312de9;
   color: black;
   text-align: center;
   cursor: pointer; }
@@ -97,7 +96,10 @@ body {
   right: 2rem;
   bottom: 2rem;
   background-color: #21c336;
-  cursor: pointer; }
+  cursor: pointer;
+  text-align: center;
+  line-height: 5rem;
+  font-size: 4rem; }
 
 #sizePlaceholder {
   display: none;

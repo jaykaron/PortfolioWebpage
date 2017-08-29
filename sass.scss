@@ -68,13 +68,10 @@ body
 .menuBox
 {
   z-index: 101;
-  //display: table;   // Needed to vertical center the text
   float: left;
 
   height:100%;
   width:14.166%; // ~ 85/6
-
-  background-color: $primary-color;
 
   color:black;
 
@@ -142,6 +139,10 @@ body
 
   background-color: rgb(33, 195, 54);
   cursor: pointer;
+
+  text-align: center;
+  line-height: 5rem;
+  font-size: 4rem;
 }
 
 #sizePlaceholder
