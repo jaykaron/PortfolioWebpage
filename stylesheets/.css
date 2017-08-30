@@ -1,0 +1,151 @@
+/* line 8, ../sass.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 11, ../sass.scss */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* line 15, ../sass.scss */
+body {
+  padding: 0px;
+  border: 0px;
+  margin: 0px;
+  background-color: white;
+  background-color: #a1beff;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 27, ../sass.scss */
+#banner {
+  z-index: 100;
+  position: fixed;
+  top: 0px;
+  height: 15rem;
+  width: 100%;
+  background-color: #3b78ff;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Q0ZTFmZiIvPjxzdG9wIG9mZnNldD0iMzAlIiBzdG9wLWNvbG9yPSIjM2I3OGZmIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #d4e1ff), color-stop(30%, #3b78ff));
+  background-image: -moz-linear-gradient(#d4e1ff, #3b78ff 30%);
+  background-image: -webkit-linear-gradient(#d4e1ff, #3b78ff 30%);
+  background-image: linear-gradient(#d4e1ff, #3b78ff 30%);
+}
+
+/* line 39, ../sass.scss */
+#logoNameContainer {
+  z-index: 101;
+  display: block;
+  float: left;
+  height: 100%;
+  width: 15%;
+}
+
+/* line 47, ../sass.scss */
+#logo {
+  z-index: 102;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7%;
+  width: auto;
+  height: 60%;
+  cursor: pointer;
+}
+
+/* line 61, ../sass.scss */
+#titleDiv {
+  z-index: 102;
+  width: 100%;
+  text-align: center;
+}
+
+/* line 68, ../sass.scss */
+#titleDiv > * {
+  margin: 0px;
+}
+
+/* line 72, ../sass.scss */
+.menuBox {
+  z-index: 101;
+  float: left;
+  height: 100%;
+  width: 14.166%;
+  color: black;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* line 86, ../sass.scss */
+.menuBox:hover {
+  background-color: #6e9bff;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMzAlIiBzdG9wLWNvbG9yPSIjNmU5YmZmIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(30%, #6e9bff));
+  background-image: -moz-linear-gradient(#ffffff, #6e9bff 30%);
+  background-image: -webkit-linear-gradient(#ffffff, #6e9bff 30%);
+  background-image: linear-gradient(#ffffff, #6e9bff 30%);
+  text-decoration: none;
+}
+
+/* line 92, ../sass.scss */
+.menuLabel {
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 1.5rem;
+  height: 1.5rem;
+  margin-top: 6.75rem;
+}
+
+/* line 101, ../sass.scss */
+.menuQuote {
+  display: none;
+  top: 50%;
+  height: 7.5rem;
+  width: 100%;
+  padding: 2rem 0.5rem 0.5rem 0.5rem;
+}
+
+/* line 111, ../sass.scss */
+#mainContainer {
+  z-index: 0;
+  position: absolute;
+  top: 15rem;
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+}
+
+/* line 121, ../sass.scss */
+.contentBox {
+  position: static;
+  width: 100%;
+  height: 80vh;
+  background-color: #c154d7;
+}
+
+/* line 131, ../sass.scss */
+#backToTop {
+  z-index: 400;
+  position: fixed;
+  display: none;
+  width: 5rem;
+  height: 5rem;
+  right: 2rem;
+  bottom: 2rem;
+  background-color: #3b78ff;
+  cursor: pointer;
+  text-align: center;
+  line-height: 5rem;
+  font-size: 4rem;
+}
+
+/* line 151, ../sass.scss */
+#sizePlaceholder {
+  display: none;
+  height: 15rem;
+  width: 5rem;
+}
