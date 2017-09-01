@@ -32,6 +32,9 @@ body {
   background-image: -moz-linear-gradient(#bec3ff, #5764ff 75%);
   background-image: -webkit-linear-gradient(#bec3ff, #5764ff 75%);
   background-image: linear-gradient(#bec3ff, #5764ff 75%);
+  -moz-box-shadow: 0 4px 8px #323232;
+  -webkit-box-shadow: 0 4px 8px #323232;
+  box-shadow: 0 4px 8px #323232;
 }
 
 /* line 41, ../sass.scss */
