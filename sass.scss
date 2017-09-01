@@ -1,6 +1,10 @@
-$primary-color:rgb(49, 45, 233);
-$back-color:rgb(94, 96, 227);
+@import "compass";
 
+$color1:rgb(87, 100, 255);
+$color2:rgb(190, 195, 255);
+$color3:rgb(70,80,204);
+$color4:rgb(44,50,127);
+$color5:rgb(82,85,107);
 $top-height: 15rem;
 
 html {
@@ -15,7 +19,7 @@ body
     padding: 0px;
     border:0px;
     margin:0px;
-    background-color:$back-color;
+    background-color:$color2;
 
     width: 100%;
     height: 100%;
@@ -30,7 +34,9 @@ body
   height:$top-height;
   width: 100%;
 
-  background-color: $primary-color;
+  background-color: $color1;
+  @include background-image(linear-gradient($color2, $color1 75%));
+  @include box-shadow( 0 4px 8px rgb(50, 50, 50));
 }
 #logoNameContainer
 {
@@ -81,7 +87,8 @@ body
 }
 .menuBox:hover
 {
-  background-color: lighten($primary-color, 15%);
+  background-color: lighten($color1, 10%);
+  @include background-image(linear-gradient(lighten($color2, 5%), lighten($color1, 5%) 75%));
   text-decoration: none;
 }
 .menuLabel
@@ -91,7 +98,7 @@ body
   font-size: 1.5rem;
 
   height: 1.5rem;
-  margin-top: $top-height / 2 - 0.75rem;
+  margin-top: $top-height / 2;
 }
 .menuQuote
 {
@@ -111,19 +118,36 @@ body
 
   width:100%;
   height: auto;
-  padding:1rem;
-
-  background-color: rgb(38, 175, 235);
+  padding:0;
 }
 .contentBox
 {
   position: static;
   width: 100%;
-  height: 80vh;
-
-  background-color: rgb(193, 84, 215)
+  height: 50rem;
+  padding: 2rem;
+  background-color: rgb(193, 84, 215);
 }
-
+.color1
+{
+  background-color: darken($color1, 5%);
+}
+.color2
+{
+  background-color: $color2;
+}
+.color3
+{
+  background-color: $color3;
+}
+.color4
+{
+  background-color: $color4;
+}
+.color5
+{
+  background-color: $color5;
+}
 // **** SCROLL UP BUTTON **** //
 #backToTop
 {
@@ -137,7 +161,7 @@ body
   right: 2rem;
   bottom: 2rem;
 
-  background-color: rgb(33, 195, 54);
+  background-color: $color1;
   cursor: pointer;
 
   text-align: center;

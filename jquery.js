@@ -1,7 +1,7 @@
-var bannerIsSmall;
+var bannerIsSmall;  // Boolean
 
-var bannerHeightBig;    // Gotten from the CSS, the initial height of the banner
-var bannerHeightSmall; // Set in the JS
+var bannerHeightBig;    // Height in pixels, Gotten from placeholder DIV
+var bannerHeightSmall;  // Height in pixels, Gotten from placeholder DIV
 var menuLabelHeight;
 
 $(document).ready(function(){
@@ -42,7 +42,7 @@ function smallTop()
   $("#banner").animate({height:bannerHeightSmall});
   var newMarginTop = bannerHeightSmall / 2 - menuLabelHeight / 2;
   $(".menuLabel").animate({marginTop: newMarginTop});
-  $("#titleDiv").fadeOut(250);
+  $("#titleDiv").stop( true, true ).fadeOut(250);
   $("#backToTop").fadeIn(250);
   $(".menuQuote").fadeOut();
 }
@@ -51,9 +51,9 @@ function smallTop()
 function bigTop()
 {
   $("#banner").animate({height:bannerHeightBig});
-  var newMarginTop = bannerHeightBig/2 - menuLabelHeight/2;
+  var newMarginTop = bannerHeightBig/2;
   $(".menuLabel").animate({marginTop: newMarginTop});
-  $("#titleDiv").delay(200).fadeIn();
+  $("#titleDiv").stop( true, true ).delay(200).fadeIn();
   $("#backToTop").fadeOut(250);
 }
 
@@ -62,7 +62,9 @@ function scrollToAnchor(anchorName)
 {
   var idString= "h2[name='"+anchorName+"']";
   var anchorObj = $(idString);
+
   $("html,body").animate({scrollTop: anchorObj.offset().top-100},'slow');
+
 }
 
 // Scroll to top
