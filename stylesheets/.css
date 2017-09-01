@@ -128,31 +128,76 @@ body {
 }
 
 /* line 130, ../sass.scss */
-.color1 {
+.color1to2 {
   background-color: #3e4cff;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSI5MCUiIHN0b3AtY29sb3I9IiMzZTRjZmYiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNiZWMzZmYiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(90%, #3e4cff), color-stop(100%, #bec3ff));
+  background-image: -moz-linear-gradient(#3e4cff 90%, #bec3ff);
+  background-image: -webkit-linear-gradient(#3e4cff 90%, #bec3ff);
+  background-image: linear-gradient(#3e4cff 90%, #bec3ff);
 }
 
-/* line 134, ../sass.scss */
+/* line 135, ../sass.scss */
 .color2 {
   background-color: #bec3ff;
 }
 
-/* line 138, ../sass.scss */
-.color3 {
+/* line 139, ../sass.scss */
+.color3to1 {
   background-color: #4650cc;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSI5MCUiIHN0b3AtY29sb3I9IiM0NjUwY2MiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzZTRjZmYiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(90%, #4650cc), color-stop(100%, #3e4cff));
+  background-image: -moz-linear-gradient(#4650cc 90%, #3e4cff);
+  background-image: -webkit-linear-gradient(#4650cc 90%, #3e4cff);
+  background-image: linear-gradient(#4650cc 90%, #3e4cff);
 }
 
-/* line 142, ../sass.scss */
+/* line 144, ../sass.scss */
+.color2to1 {
+  background-color: #bec3ff;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSI5MCUiIHN0b3AtY29sb3I9IiNiZWMzZmYiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzZTRjZmYiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(90%, #bec3ff), color-stop(100%, #3e4cff));
+  background-image: -moz-linear-gradient(#bec3ff 90%, #3e4cff);
+  background-image: -webkit-linear-gradient(#bec3ff 90%, #3e4cff);
+  background-image: linear-gradient(#bec3ff 90%, #3e4cff);
+}
+
+/* line 149, ../sass.scss */
+.color1to3 {
+  background-color: #3e4cff;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSI5MCUiIHN0b3AtY29sb3I9IiMzZTRjZmYiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM0NjUwY2MiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(90%, #3e4cff), color-stop(100%, #4650cc));
+  background-image: -moz-linear-gradient(#3e4cff 90%, #4650cc);
+  background-image: -webkit-linear-gradient(#3e4cff 90%, #4650cc);
+  background-image: linear-gradient(#3e4cff 90%, #4650cc);
+}
+
+/* line 154, ../sass.scss */
+.color3to5 {
+  background-color: #4650cc;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSI5MCUiIHN0b3AtY29sb3I9IiM0NjUwY2MiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM1MjU1NmIiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(90%, #4650cc), color-stop(100%, #52556b));
+  background-image: -moz-linear-gradient(#4650cc 90%, #52556b);
+  background-image: -webkit-linear-gradient(#4650cc 90%, #52556b);
+  background-image: linear-gradient(#4650cc 90%, #52556b);
+}
+
+/* line 159, ../sass.scss */
 .color4 {
   background-color: #2c327f;
 }
 
-/* line 146, ../sass.scss */
+/* line 163, ../sass.scss */
 .color5 {
   background-color: #52556b;
 }
 
-/* line 151, ../sass.scss */
+/* line 168, ../sass.scss */
 #backToTop {
   z-index: 400;
   position: fixed;
@@ -168,7 +213,7 @@ body {
   font-size: 4rem;
 }
 
-/* line 171, ../sass.scss */
+/* line 188, ../sass.scss */
 #sizePlaceholder {
   display: none;
   height: 15rem;

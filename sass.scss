@@ -127,17 +127,34 @@ body
   padding: 2rem;
   background-color: rgb(193, 84, 215);
 }
-.color1
+.color1to2
 {
   background-color: darken($color1, 5%);
+  @include background-image(linear-gradient(darken($color1, 5%) 90%, $color2));
 }
 .color2
 {
   background-color: $color2;
 }
-.color3
+.color3to1
 {
   background-color: $color3;
+  @include background-image(linear-gradient($color3 90%, darken($color1, 5%)));
+}
+.color2to1
+{
+  background-color: $color2;
+  @include background-image(linear-gradient($color2 90%, darken($color1, 5%)));
+}
+.color1to3
+{
+  background-color: darken($color1, 5%);
+  @include background-image(linear-gradient(darken($color1, 5%) 90%, $color3));
+}
+.color3to5
+{
+  background-color: $color3;
+  @include background-image(linear-gradient($color3 90%, $color5));
 }
 .color4
 {
