@@ -36,6 +36,7 @@ body
 
   background-color: $color1;
   @include background-image(linear-gradient($color2, $color1 75%));
+  //@include box-shadow( 0 7px black);
 }
 #logoNameContainer
 {
@@ -87,7 +88,6 @@ body
 .menuBox:hover
 {
   background-color: lighten($color1, 10%);
-  //@include background-image(linear-gradient(lighten($color1, 40%), lighten($color1, 10%) 30%));
   @include background-image(linear-gradient(lighten($color2, 5%), lighten($color1, 5%) 75%));
   text-decoration: none;
 }

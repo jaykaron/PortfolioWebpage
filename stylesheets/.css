@@ -34,7 +34,7 @@ body {
   background-image: linear-gradient(#bec3ff, #5764ff 75%);
 }
 
-/* line 40, ../sass.scss */
+/* line 41, ../sass.scss */
 #logoNameContainer {
   z-index: 101;
   display: block;
@@ -43,7 +43,7 @@ body {
   width: 15%;
 }
 
-/* line 48, ../sass.scss */
+/* line 49, ../sass.scss */
 #logo {
   z-index: 102;
   display: block;
@@ -55,19 +55,19 @@ body {
   cursor: pointer;
 }
 
-/* line 62, ../sass.scss */
+/* line 63, ../sass.scss */
 #titleDiv {
   z-index: 102;
   width: 100%;
   text-align: center;
 }
 
-/* line 69, ../sass.scss */
+/* line 70, ../sass.scss */
 #titleDiv > * {
   margin: 0px;
 }
 
-/* line 73, ../sass.scss */
+/* line 74, ../sass.scss */
 .menuBox {
   z-index: 101;
   float: left;
@@ -78,7 +78,7 @@ body {
   cursor: pointer;
 }
 
-/* line 87, ../sass.scss */
+/* line 88, ../sass.scss */
 .menuBox:hover {
   background-color: #8a93ff;
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Q4ZGJmZiIvPjxzdG9wIG9mZnNldD0iNzUlIiBzdG9wLWNvbG9yPSIjNzE3Y2ZmIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
